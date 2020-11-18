@@ -1,6 +1,6 @@
 {
   "name": "iparking",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A UI components Template Library with React",
   "main": "dist/iparking.js",
   "typings": "types/index.d.ts",
@@ -37,7 +37,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/z704600202qj/iparking.git"
+    "url": "git+https://github.com/z704600202qj/iparking.git",
+    "directory": "iparking"
   },
   "author": "Zhang",
   "license": "MIT",
