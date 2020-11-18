@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ES6",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "outDir": "./types"
+  },
+  "include": [
+    "src"
+  ]
+}
