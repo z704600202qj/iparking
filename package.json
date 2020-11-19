@@ -111,7 +111,8 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.7"
+    "@babel/runtime": "^7.8.7",
+    "docz-plugin-css": "^0.11.0"
   },
   "husky": {
     "hooks": {
