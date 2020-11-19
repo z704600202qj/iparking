@@ -1,6 +1,6 @@
 {
   "name": "iparking",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A UI components Template Library with React",
   "main": "dist/iparking.js",
   "typings": "types/index.d.ts",
@@ -66,6 +66,7 @@
     "@typescript-eslint/parser": "^2.22.0",
     "babel-jest": "^25.3.0",
     "babel-loader": "^8.0.6",
+    "conventional-changelog": "^3.1.24",
     "cross-env": "^7.0.2",
     "css-loader": "^5.0.1",
     "commitizen": "^4.0.3",
@@ -110,8 +111,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.7",
-    "conventional-changelog": "^3.1.24"
+    "@babel/runtime": "^7.8.7"
   },
   "husky": {
     "hooks": {
