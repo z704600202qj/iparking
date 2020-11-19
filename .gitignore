@@ -6,7 +6,12 @@
 *.docz
 *.patch
 *.bak
-coverage
+iparking
+lib
+types
+es/
+dist
+coverage/
 .DS_Store
 node_modules/
 .project
