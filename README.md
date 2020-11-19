@@ -66,7 +66,13 @@
 ## commit规范
 
 commit注释规范说明，比如添加了一个新功能，commit的注释应该为，`feat: 添加了功能xxx`
-
+vscode 安装插件
+    名称: git-commit-lint-vscode
+    ID: uvdream.git-commit-lint-vscode
+    说明: git提交规范
+    版本: 1.2.0
+    发布者: 汪中杰
+    VS Marketplace 链接: https://marketplace.visualstudio.com/items?itemName=UvDream.git-commit-lint-vscode
 ```
 - feat : 新功能
 - fix : 修复bug

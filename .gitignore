@@ -6,6 +6,7 @@
 *.docz
 *.patch
 *.bak
+coverage
 .DS_Store
 node_modules/
 .project
