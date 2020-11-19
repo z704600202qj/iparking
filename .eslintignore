@@ -9,4 +9,5 @@ script
 
 karma.conf.js
 .babelrc.js
+doczrc.js
 stylelint.config.js

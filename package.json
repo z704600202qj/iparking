@@ -37,8 +37,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/z704600202qj/iparking.git",
-    "directory": "iparking"
+    "url": "git+https://github.com/z704600202qj/iparking.git"
   },
   "author": "Zhang",
   "license": "MIT",
@@ -117,8 +116,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm run test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-push": "npm run test"
     }
   },
   "config": {
