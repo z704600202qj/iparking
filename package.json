@@ -1,6 +1,6 @@
 {
   "name": "iparking",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A UI components Template Library with React",
   "main": "dist/iparking.js",
   "typings": "types/index.d.ts",
@@ -34,6 +34,12 @@
     "react-component",
     "template",
     "react-component-template"
+  ],
+  "files": [
+    "dist",
+    "es",
+    "lib",
+    "types"
   ],
   "repository": {
     "type": "git",
