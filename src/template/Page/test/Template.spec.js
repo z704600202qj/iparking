@@ -6,6 +6,6 @@ import Template from '../Template';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe('Template', () => {
+// describe('Template', () => {
 
-});
+// });
