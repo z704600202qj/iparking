@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 export interface AlertProps {
   type?: 'success' | 'warning' | 'info' | 'error';
   delete?: boolean;
