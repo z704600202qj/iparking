@@ -1,6 +1,5 @@
 import * as React from 'react';
 import noop from '../../utils/noop';
-import './style';
 
 export interface ButtonProps {
   type?: 'primary' | 'ghost' | 'warning' | 'default';

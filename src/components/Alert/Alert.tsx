@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './style/index';
 
 export interface AlertProps {
   type?: 'success' | 'warning' | 'info' | 'error';
