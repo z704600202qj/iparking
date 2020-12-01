@@ -14,6 +14,8 @@ module.exports = {
     'import/prefer-default-export': 0,
     'react/prop-types': 0,
     'jsx-a11y/click-events-have-key-events': 0,
-    'jsx-a11y/interactive-supports-focus': 0
+    'jsx-a11y/interactive-supports-focus': 0,
+    'comma-dangle':[2, "never"],
+    'max-len': ["error", { "code": 180 }]
   }
 }
