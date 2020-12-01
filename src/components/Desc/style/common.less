@@ -1,0 +1,39 @@
+@selector: desc;
+
+.@{selector} {
+    &-warp {
+        display: flex;
+    }
+
+    &-avator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        margin-right: 15px;
+        font-size: 53px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+        background-color: @base-color;
+    }
+
+    &-content {
+        flex: 1;
+
+        h2 {
+            font-size: 34px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.85);
+        }
+
+        p {
+            display: -webkit-box;
+            box-orient: vertical;
+            overflow: hidden;
+            line-height: 160%;
+            text-align: left;
+            -webkit-line-clamp: 2;
+        }
+    }
+}

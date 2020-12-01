@@ -1,0 +1,27 @@
+---
+name: Desc
+route: /Desc
+menu: 组件
+---
+
+import { Playground } from 'docz'; 
+import Desc from "./Desc";
+
+## 代码演示
+
+### 基本用法
+
+<Playground>
+  <Desc/>
+</Playground>
+
+## API
+
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| showBtn | 编辑按钮 | true/false | true |
+| paramTitle | title参数属性 | 'string'非必填 | 'title' |
+| paramDesc | desc参数属性 | 'string'非必填 | 'desc' |
+| defaultTitle | 标题属性 | 'string'非必填 | 'xxx' |
+| defaultDesc | 描述属性 | 'string'非必填 | 'xxx' |
+| cbFunction | 修改回调 | 非必填 |  |

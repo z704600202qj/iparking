@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './style/index';
 
 export interface AlertProps {
   type?: 'success' | 'warning' | 'info' | 'error';
@@ -7,7 +8,7 @@ export interface AlertProps {
 
 const Alert: React.FC<AlertProps> = (props) => {
   const {
-    children,
+    children
   } = props;
 
   return (
