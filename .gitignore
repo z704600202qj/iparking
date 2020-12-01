@@ -6,6 +6,10 @@
 *.docz
 *.patch
 *.bak
+es
+types
+dist
+lib
 iparking
 coverage/
 .DS_Store
