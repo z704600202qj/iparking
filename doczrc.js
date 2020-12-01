@@ -7,10 +7,6 @@ export default {
   plugins: [
     css({
       preprocessor: 'less',
-      cssmodules: true,
-      loaderOpts: {},
-      cssOpts: {},
-      ruleOpts: {},
     }),
   ],
   files: 'src/components/**/*.{markdown,mdx}',

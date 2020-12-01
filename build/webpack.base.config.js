@@ -23,8 +23,6 @@ module.exports = {
 
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.less'],
-    modules: ['src', 'node_modules']
-
   },
 
   module: {

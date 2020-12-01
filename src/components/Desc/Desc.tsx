@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Input } from 'antd';
+import './style/index.less';
 
 const { TextArea } = Input;
 
