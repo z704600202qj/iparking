@@ -1,9 +1,9 @@
-const { resolve } = require('path')
+const path = require('path');
 
 module.exports = {
 
   entry: {
-    'iparking': resolve(__dirname, '../src/index'),
+    'iparking': path.resolve(__dirname, '../src/index'),
   },
 
   externals: {
@@ -22,8 +22,9 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', '.less'],
     modules: ['src', 'node_modules']
+
   },
 
   module: {
@@ -38,13 +39,13 @@ module.exports = {
       {
         test: /\.less$/,
         use: [{
-            loader: "style-loader" // creates style nodes from JS strings
+          loader: "style-loader" // creates style nodes from JS strings
         }, {
-            loader: "css-loader" // translates CSS into CommonJS
+          loader: "css-loader" // translates CSS into CommonJS
         }, {
-            loader: "less-loader" // compiles Less to CSS
+          loader: "less-loader" // compiles Less to CSS
         }]
-    }
+      }
     ],
   },
 }
