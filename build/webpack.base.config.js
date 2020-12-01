@@ -23,7 +23,7 @@ module.exports = {
 
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
-    modules: [path.resolve(__dirname, 'src/styles'),]
+    modules: ['src', 'node_modules']
   },
 
   module: {
