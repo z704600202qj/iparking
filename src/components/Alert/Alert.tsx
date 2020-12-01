@@ -7,7 +7,7 @@ export interface AlertProps {
 
 const Alert: React.FC<AlertProps> = (props) => {
   const {
-    children,
+    children
   } = props;
 
   return (

@@ -5,6 +5,7 @@
   "main": "dist/iparking.js",
   "typings": "types/index.d.ts",
   "scripts": {
+    "create:compontent": "node --inspect script/page.ts",
     "clear": "rimraf dist && rimraf lib && rimraf types",
     "build:dev": "cross-env NODE_ENV=development webpack --config build/webpack.normal.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config build/webpack.min.config.js",
@@ -118,6 +119,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.8.7",
+    "antd": "^4.8.6",
     "docz-plugin-css": "^0.11.0"
   },
   "husky": {

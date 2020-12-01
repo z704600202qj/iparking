@@ -11,7 +11,7 @@ export interface ButtonProps {
 const Button: React.FC<ButtonProps> = (props) => {
   const {
     onClick = noop,
-    children,
+    children
   } = props;
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {

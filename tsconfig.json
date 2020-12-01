@@ -6,10 +6,11 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules","example"]
 }
