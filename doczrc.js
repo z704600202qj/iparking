@@ -5,7 +5,13 @@ export default {
   title: 'react-ui', // 站点标题
   typescript: true, // 组件源文件是通过typescript开发，需要打开此选项
   plugins: [
-    css({ preprocessor: 'less' }),
+    css({
+      preprocessor: 'less',
+      cssmodules: true,
+      loaderOpts: {},
+      cssOpts: {},
+      ruleOpts: {},
+    }),
   ],
   files: 'src/components/**/*.{markdown,mdx}',
 };
