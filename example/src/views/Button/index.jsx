@@ -1,10 +1,10 @@
 import React from 'react'
-import { Button } from 'iparking'
+import { Desc } from 'iparking'
 
 const ButtonView = () => {
   return (
     <div>
-      <Button>Hello Button</Button>
+      <Desc>Hello Button</Desc>
     </div>
   )
 }
