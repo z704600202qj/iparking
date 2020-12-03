@@ -1,5 +1,6 @@
 import * as React from 'react';
 import noop from '../../utils/noop';
+import './style/index.less';
 
 export interface ButtonProps {
   type?: 'primary' | 'ghost' | 'warning' | 'default';
