@@ -23,6 +23,7 @@ module.exports = {
 
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.less'],
+    modules: [path.resolve(__dirname, 'src/styles'), 'node_modules']
   },
 
   module: {
@@ -41,7 +42,8 @@ module.exports = {
         }, {
           loader: "css-loader" // translates CSS into CommonJS
         }, {
-          loader: "less-loader" // compiles Less to CSS
+          loader: "less-loader", // compiles Less to CSS
+        
         }]
       }
     ],
