@@ -1,6 +1,6 @@
 {
   "name": "iparking",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A UI components Template Library with React",
   "main": "dist/iparking.js",
   "typings": "types/index.d.ts",
