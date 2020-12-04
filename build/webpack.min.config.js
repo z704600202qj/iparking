@@ -9,7 +9,7 @@ module.exports = merge(WebpackBaseConfig, {
   output: {
     path: resolve(__dirname, '../dist'),
     filename: '[name].min.js',
-    library: 'ui-components-library-template',
+    library: 'iparking',
     libraryTarget: 'umd',
   },
 
@@ -19,6 +19,7 @@ module.exports = merge(WebpackBaseConfig, {
     }),
     new webpack.SourceMapDevToolPlugin({
       filename: `[file].map`
-    })
+    }),
+    
   ]
 })
