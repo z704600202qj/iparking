@@ -1,0 +1,69 @@
+@selector: file;
+
+.@{selector} {
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-select {
+    background-color: #f1f5fa;
+    border: 1px solid #90d8ff;
+    border-radius: 5px;
+  }
+
+  &-unselect-icon {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+
+    &:hover {
+      color: @primary-color!important
+    }
+  }
+
+  &-select-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: @primary-color!important
+  }
+
+  &-item {
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 7px;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 3px;
+
+    &:hover {
+      background: #f1f5fa;
+
+      .@{selector}-unselect-icon {
+        display: block;
+        color: #90d8ff;
+      }
+    }
+  }
+
+  &-name {
+    color: #424e67;
+    text-align: center;
+    margin-top: 5px
+  }
+
+  &-icon {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 25px auto 0;
+  }
+
+}
