@@ -9,7 +9,7 @@ module.exports = merge(WebpackBaseConfig, {
   output: {
     path: resolve(__dirname, '../dist'),
     filename: '[name].js',
-    library: 'ui-components-library-template',
+    library: 'iparking',
     libraryTarget: 'umd',
   },
 

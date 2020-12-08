@@ -13,6 +13,10 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 0,
     'react/prop-types': 0,
+    'global-require': 0,
+    'eol-last': 0,
+    'consistent-return': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/interactive-supports-focus': 0,
     'comma-dangle':[2, "never"],

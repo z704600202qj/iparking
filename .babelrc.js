@@ -31,7 +31,7 @@ module.exports = function (api, options) {
       "@babel/plugin-proposal-export-namespace-from",
       "@babel/plugin-proposal-optional-chaining",
       ["@babel/plugin-proposal-decorators", { "legacy": true }],
-      ["import", { "libraryName": "antd", "style": true }],
+      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": 'css' }],
 
       [
         "@babel/plugin-transform-runtime",

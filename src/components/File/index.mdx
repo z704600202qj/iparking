@@ -1,0 +1,40 @@
+---
+name: File目录结构
+route: /File
+menu: 组件
+---
+
+import { Playground } from 'docz'; 
+import FileCompontent from "./File.tsx";
+
+## 代码演示
+
+### 基本用法
+
+<Playground style={{height:'220px'}} >
+  <FileCompontent data={[{
+   name:'文件名称1',
+   type:'file',
+   id:2,
+   select:false
+ },{
+   name:'文件名称2',
+   type:'txt',
+   id:1,
+   select:false
+ },
+ {
+   name:'文件名称3',
+   type:'file',
+   id:4,
+   select:false
+ }]}/>
+</Playground>
+
+## API
+
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| data | 数据源 |  data=[{name:'文件名称',type:'file',id:1,select?:false}]必填 | [] |
+| rightMenu | 右击菜单源 |  data=[{ name: string,handle(): void;]非必填 | [] |
+| rightClick | 是否右击 |  Boolean非必填 | false |
