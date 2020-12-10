@@ -48,6 +48,10 @@ module.exports = {
         },
       },
       {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        loader: 'url-loader',
+      },
+      {
         test: /\.less|.css$/,
         use: [
           {
