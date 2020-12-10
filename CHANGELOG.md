@@ -1,4 +1,4 @@
-# [1.1.0](https://github.com/z704600202qj/iparking/compare/v1.0.1...v1.1.0) (2020-12-10)
+# [1.2.0](https://github.com/z704600202qj/iparking/compare/v1.0.1...v1.2.0) (2020-12-10)
 
 
 
