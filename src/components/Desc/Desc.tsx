@@ -11,10 +11,12 @@ export interface DescProps {
   paramTitle?: string;
   paramDesc?: string;
   cbFunction?: (param: any) => void;
+  style?: React.CSSProperties;
 }
 
 const Desc: React.FC<DescProps> = (props) => {
   const {
+    style,
     showBtn = true,
     paramTitle = 'title',
     paramDesc = 'desc',
@@ -42,7 +44,7 @@ const Desc: React.FC<DescProps> = (props) => {
     });
   };
   return (
-    <div className="desc-warp">
+    <div className="desc-warp" style={{ ...style }}>
       <div className="desc-avator">{defaultTitle.substring(0, 1)}</div>
       <div className="desc-content">
         <h2>

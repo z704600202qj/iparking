@@ -19,6 +19,7 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/interactive-supports-focus': 0,
+    '@typescript-eslint/no-use-before-define': 0,
     'comma-dangle':[2, "never"],
     'max-len': ["error", { "code": 180 }],
     "linebreak-style": [0, "error", "windows"],
