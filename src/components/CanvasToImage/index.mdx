@@ -12,7 +12,7 @@ import CanvasToImage from "./CanvasToImage.tsx";
 ### 基本用法
 
 <Playground style={{height:'220px'}} >
-  <CanvasToImage />
+  <CanvasToImage title={'图片'} height={200} width={200} />
 </Playground>
 
 ## API
@@ -20,8 +20,8 @@ import CanvasToImage from "./CanvasToImage.tsx";
 | 属性 | 说明     | 类型                                         | 默认值 |
 | ---- | -------- | -------------------------------------------- | ------ |
 | title | 标题 |  string必填 | 图片 |
-| to | 是否转换 |   Boolean非必填 | true |
 | height | 高度 |  number | 200 |
 | width | 宽度 |  number | 200 |
 | font | 字体设置 |  string | 'bold 53px serif' |
 | style | 样式（主要设置图片背景） |  string | '' |
+| fontStyle | 字体样式（可见canvas：fillStyle 属性设置） |  string | '' |
