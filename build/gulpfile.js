@@ -22,6 +22,9 @@ const TS_ENTRY = [
 const LESS_ENTRY = [
   resolve(__dirname, '../src/**/*.less')
 ];
+const IMAGES_ENTRY = [
+  resolve(__dirname, '../src/resources/image/*')
+];
 const LIB_OUTPUT = resolve(__dirname, '../lib');
 const ES_OUTPUT = resolve(__dirname, '../es');
 
@@ -30,10 +33,10 @@ const buildCss = () => {
     const taskName = `buildCss-${theme}`;
     task(taskName, () => {
       return src(resolve(__dirname, `../src/styles/themes/${theme}/index.less`))
-      .pipe(less())
-      .pipe(autoprefixer())
-      .pipe(rename(`iparking.${theme}.css`))
-      .pipe(dest(OUTPUT));
+        .pipe(less())
+        .pipe(autoprefixer())
+        .pipe(rename(`iparking.${theme}.css`))
+        .pipe(dest(OUTPUT));
     });
     return taskName;
   })
@@ -44,11 +47,11 @@ const buildUglifyCss = () => {
     const taskName = `buildUglifyCss-${theme}`;
     task(taskName, () => {
       return src(resolve(__dirname, `../src/styles/themes/${theme}/index.less`))
-      .pipe(less())
-      .pipe(autoprefixer())
-      .pipe(clean())
-      .pipe(rename(`iparking.${theme}.min.css`))
-      .pipe(dest(OUTPUT));
+        .pipe(less())
+        .pipe(autoprefixer())
+        .pipe(clean())
+        .pipe(rename(`iparking.${theme}.min.css`))
+        .pipe(dest(OUTPUT));
     });
     return taskName;
   })
@@ -74,7 +77,14 @@ const copyLess = () => {
     .pipe(dest(ES_OUTPUT))
 };
 
+const buildImage = () => {
+  return src(IMAGES_ENTRY)
+    .pipe(dest(`${LIB_OUTPUT}/resources/image`))
+    .pipe(dest(`${ES_OUTPUT}/resources/image`))
+};
+
 exports.style = series(
+  buildImage,
   ...buildCss(),
   ...buildUglifyCss()
 );
